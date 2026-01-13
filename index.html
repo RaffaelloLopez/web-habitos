@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Hábitos | Guía Práctica</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0f3c4a;
+        --accent: #e68f5c;
+        --text: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        overflow-x: hidden;
+      }
+
+      /* Secciones en cascada */
+      section {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .label {
+        color: var(--accent);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.1;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      .btn-hotmart {
+        background: var(--accent);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: inline-block;
+        transition: transform 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-hotmart:hover {
+        transform: translateY(-5px);
+      }
+
+      .ebook-img {
+        max-width: 300px;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .scroll-arrow {
+        font-size: 2rem;
+        color: var(--accent);
+        margin-top: 40px;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <span class="label">Guía Práctica de Hábitos</span>
+        <h1>Deja de empezar fuerte para luego abandonar.</h1>
+        <p>No fallas tú, falla un sistema que no encaja en tu vida real.</p>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <section style="background: rgba(0, 0, 0, 0.1)">
+      <div class="container">
+        <span class="label">La Solución</span>
+        <h1>Un sistema diseñado para la vida real.</h1>
+        <p>
+          Ebook completo + PDFs de ejercicios prácticos para que avances paso a
+          paso.
+        </p>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="label">Empieza hoy</span>
+        <h1>Accede al sistema completo</h1>
+
+        <img
+          src="TU_IMAGEN_DEL_EBOOK.jpg"
+          alt="Ebook Hábitos"
+          class="ebook-img"
+        />
+
+        <p>Obtén acceso inmediato y no vuelvas a abandonar nunca.</p>
+
+        <a href="TU_LINK_DE_HOTMART_AQUI" class="btn-hotmart">
+          QUIERO EMPEZAR AHORA ↗
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
